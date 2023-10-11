@@ -7,8 +7,12 @@
 }
 
 body {
-  background-image: linear-gradient(120deg, #e82e81, #fcebf3);
-  color: #fff;
+  background-image: linear-gradient(
+    133deg,
+    rgba(27, 27, 27, 1) 0%,
+    rgba(55, 46, 232, 1) 100%
+  );
+  color: #ffffff;
   font-family: 'Poppins', sans-serif;
   min-height: 100vh;
   display: flex;
@@ -35,17 +39,18 @@ form button {
   font-size: 2rem;
   border: none;
   background: #fff;
+  color: rgb(40, 33, 168);
 }
 
 form button {
-  color: #e82e81;
+  color: rgb(9, 9, 121);
   background: #fff;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 form button:hover {
-  background: #e82e81;
+  background: rgb(9, 9, 121);
   color: #fff;
 }
 
@@ -62,7 +67,7 @@ form button:hover {
 .todo {
   margin: 0.5rem 0;
   background: white;
-  color: #e82e81;
+  color: rgb(40, 33, 168);
   font-size: 1.5rem;
   display: flex;
   justify-content: space-between;
@@ -76,20 +81,21 @@ form button:hover {
 
 .complete-button,
 .trash-button {
-  background: #ffb1d6;
+  background-color: rgba(55, 46, 232, 1);
   color: white;
   border: none;
   padding: 1rem;
   cursor: pointer;
   font-size: 1rem;
+  transition: 0.3s ease;
 }
 
-.complete-button {
-  background: rgb(0, 160, 0);
+.complete-button:hover {
+  background: rgb(0, 160, 125);
 }
 
-.trash-button {
-  background: rgb(160, 0, 0);
+.trash-button:hover {
+  background: rgb(160, 0, 43);
 }
 
 .todo-item {
@@ -106,16 +112,26 @@ form button:hover {
   opacity: 0.5;
 }
 
+input {
+  outline: none;
+}
+
+option {
+  border: none;
+  outline: none;
+  border-radius: 0;
+}
+
 select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  outline: 0;
+
   box-shadow: none;
   border: none;
 
   font-family: 'Poppins', sans-serif;
-  color: #e82e81;
+  color: rgb(40, 33, 168);
   font-weight: 500;
   font-size: 1.1rem;
   cursor: pointer;
@@ -132,7 +148,7 @@ select {
 .select::after {
   content: '\25BC';
   position: absolute;
-  background: #e82e81;
+  background: rgba(55, 46, 232, 1);
   top: 0;
   right: 0;
   line-height: 100%;
@@ -143,5 +159,5 @@ select {
 
 .select:hover::after {
   background-color: white;
-  color: #e82e81;
+  color: rgba(55, 46, 232, 1);
 }
