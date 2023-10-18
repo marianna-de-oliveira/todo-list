@@ -7,8 +7,12 @@
 }
 
 body {
-  background-image: linear-gradient(133deg, #141254 0%, #6a7dff 100%);
-  color: #dae5ff;
+  background-image: linear-gradient(
+    133deg,
+    rgba(27, 27, 27, 1) 0%,
+    rgba(55, 46, 232, 1) 100%
+  );
+  color: #ffffff;
   font-family: 'Poppins', sans-serif;
   min-height: 100vh;
   display: flex;
